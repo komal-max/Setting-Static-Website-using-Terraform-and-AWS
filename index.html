@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +10,40 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f8f8;
+      background-color: #eaf4f7;
     }
+
     header {
-      background-color: #333;
-      color: white;
+      background-color: #c2f6b2;
+      color: #0f0e0e;
       padding: 1rem;
       text-align: center;
     }
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 2rem;
     }
+
     .project {
-      background-color: #fff;
+      background-color: #ffffff;
       margin-bottom: 2rem;
       border: 1px solid #ddd;
       padding: 1rem;
       border-radius: 5px;
       transition: transform 0.3s ease-in-out;
     }
+
     .project:hover {
       transform: translateY(-5px);
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     }
+
     .project h3 {
       margin-top: 0;
     }
+
     .review {
       background-color: #fff;
       padding: 1rem;
@@ -44,42 +51,115 @@
       margin-bottom: 1rem;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
     }
+
     .profile-image {
-      max-width: 100%;
+      display: block;
+      max-width: 200px;
+      width: 100%;
+      margin: 0 auto;
       border-radius: 50%;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       margin-bottom: 1rem;
     }
+
+    /* Custom Review Styling */
+    .review p {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .review p.author {
+      color: #888;
+    }
+
+    /* Social Links Styling */
+    .social-links {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .social-links a {
+      font-size: 24px;
+      color: #333;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .social-links a:hover {
+      color: #007bff;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Komal's Portfolio</h1>
     <p>Welcome to my portfolio website. Explore my projects and reviews below.</p>
+    <div class="social-links">
+      <a href="https://hashnode.com/@KomalMinhas" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com/in/komal-minhas" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/komal-max" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
   </header>
-  <div class="container">
-    <img src="https://my-tf-s3-bucket-2023.s3.us-west-2.amazonaws.com/my-profile.jpeg" alt="Komal's Profile" class="profile-image">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1: Sample Project</h3>
-      <p>This is a brief description of the project.</p>
+
+  <main>
+    <img class="profile-image" src="https://my-new-tf-s3-bucket-2023.s3.us-west-2.amazonaws.com/my-profile+2.jpeg" alt="Profile Image">
+    <div class="container">
+
+            <!-- Rest of your content here -->
+            <h2>About Me</h2>
+            <p>Hi there! I'm Komal Minhas, a Tech Engineer with a passion for driving impactful solutions.</p>
+            <p>I like exploring new opportunities and contributing my expertise to innovative projects.</p>
+            <p> Let's connect and explore how we can achieve great things together!</p>
+      
+            <h2 class="testimonials">Reviews</h2>
+            <div class="reviews">
+              <div class="testimonial-card">
+                <div class="rating">
+                  <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <p>"Komal has gone above and beyond to help find solutions for our problems"</p>
+                <p>- Kate Smith, CEO at Example Corp</p>
+              </div>
+              <div class="testimonial-card">
+                <div class="rating">
+                  <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <p>"Working with Komal was a great experience."</p>
+                <p>- Jonathan Frost, CTO at ABC Solutions</p>
+              </div>
+              <!-- Add more reviews as needed -->
+            </div>
+      
+            <h2 class="Projects"></h2>
+            <div class="project-card">
+              <h3>Project: End-to-End CI/CD Pipeline</h3>
+              <p>Crafting an End-to-End CI/CD Pipeline for Spring Boot application using Jenkins</p>
+            </div>
+            <div class="project-card">
+              <h3>Project: AWS wrapper</h3>
+              <p>Creating a wrapper in Python that allows you to connect to AWS services using BOTO</p>
+            </div>
+            <!-- Add more cloud native projects as needed -->
+      
+            <div class="vibrant-box">
+              <h2>Contact Me</h2>
+              <p>If you have any questions, collaboration opportunities, or just want to say hello, feel free to reach out to me:</p>
+              <ul>
+                <li>Email: komalminhas.96@gmail.com</li>
+                <li>YouTube: <a href="https://hashnode.com/@KomalMinhas" target="_blank">My HashNode Profile</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/komal-minhas" target="_blank">My LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/komal-max" target="_blank">My GitHub Profile</a></li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      
+
     </div>
-    <div class="project">
-      <h3>Project 2: Another Project</h3>
-      <p>This is another exciting project description.</p>
-    </div>
-    <!-- Add more project divs as needed -->
-    
-    <h2>Reviews</h2>
-    <div class="review">
-      <p>"Komal's work is exceptional. She consistently delivers high-quality results."</p>
-      <p>- Client A</p>
-    </div>
-    <div class="review">
-      <p>"I was amazed by Komal's attention to detail and professionalism."</p>
-      <p>- Client B</p>
-    </div>
-    <!-- Add more review divs as needed -->
-  </div>
+  </main>
 </body>
+
 </html>
